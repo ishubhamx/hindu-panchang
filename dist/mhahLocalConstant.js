@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.MhahLocalConstant = void 0;
-class MhahLocalConstant {
+export class MhahLocalConstant {
     constructor() {
         this.Ritu = {
             name: ['बसंत', 'ग्रीष्म', 'वर्षा', 'शरद', 'हेमंत', 'शीत'],
@@ -333,4 +330,3 @@ class MhahLocalConstant {
         };
     }
 }
-exports.MhahLocalConstant = MhahLocalConstant;

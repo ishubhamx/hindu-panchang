@@ -1,10 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.MhahCalendar = void 0;
-const mhahPanchangImpl_1 = require("./mhahPanchangImpl");
-const mhahSunMoonTimer_1 = require("./mhahSunMoonTimer");
-const mhahCalculateFunc_1 = require("./mhahCalculateFunc");
-class MhahCalendar {
+import { MhahPanchangImpl } from './mhahPanchangImpl';
+import { MhahSunMoonTimer } from './mhahSunMoonTimer';
+import { MhahCalculateFunc } from './mhahCalculateFunc';
+export class MhahCalendar {
     calendar(mhahConstant, dt, lat, lng, height) {
         let Tithi = {};
         let Nakshatra = {};
@@ -18,9 +15,9 @@ class MhahCalendar {
         let Gana = {};
         let Guna = {};
         let Trinity = {};
-        let mhahPanchangImpl = new mhahPanchangImpl_1.MhahPanchangImpl(mhahConstant);
-        let mhahCalculateFunc = new mhahCalculateFunc_1.MhahCalculateFunc();
-        let mhahSunMoonTimer = new mhahSunMoonTimer_1.MhahSunMoonTimer();
+        let mhahPanchangImpl = new MhahPanchangImpl(mhahConstant);
+        let mhahCalculateFunc = new MhahCalculateFunc();
+        let mhahSunMoonTimer = new MhahSunMoonTimer();
         let sunRise = mhahSunMoonTimer.getSunRiseJd(dt, lat, lng, height);
         let nn_tithi = this.getCalendarTithi(sunRise, mhahPanchangImpl);
         let nn_paksha = mhahCalculateFunc.getPaksha(nn_tithi);
@@ -140,4 +137,3 @@ class MhahCalendar {
         return Math.floor((masa_num - 1) / 2);
     }
 }
-exports.MhahCalendar = MhahCalendar;

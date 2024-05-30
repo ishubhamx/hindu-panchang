@@ -1,10 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.MhahCalculateFunc = void 0;
-const mhahPanchangImpl_1 = require("./mhahPanchangImpl");
-class MhahCalculateFunc {
+import { MhahPanchangImpl } from './mhahPanchangImpl';
+export class MhahCalculateFunc {
     calculate(d, mhahConstant) {
-        let mhahPanchangImpl = new mhahPanchangImpl_1.MhahPanchangImpl(mhahConstant);
+        let mhahPanchangImpl = new MhahPanchangImpl(mhahConstant);
         let Day = {};
         let Tithi = {};
         let Paksha = {};
@@ -203,4 +200,3 @@ class MhahCalculateFunc {
         return ganaPostions[raasiIndex];
     }
 }
-exports.MhahCalculateFunc = MhahCalculateFunc;

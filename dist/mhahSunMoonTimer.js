@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.MhahSunMoonTimer = void 0;
-class MhahSunMoonTimer {
+export class MhahSunMoonTimer {
     constructor() {
         this.rad = Math.PI / 180;
         // sun times configuration (angle, morning name, evening name)
@@ -94,4 +91,3 @@ class MhahSunMoonTimer {
         return this.solarTransitJ(a, M, L);
     }
 }
-exports.MhahSunMoonTimer = MhahSunMoonTimer;

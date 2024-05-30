@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.corr2 = exports.corr = void 0;
-class corr {
+export class corr {
     constructor(mlcor, mscor, fcor, dcor, lcor) {
         this.mlcor = mlcor;
         this.mscor = mscor;
@@ -10,8 +7,7 @@ class corr {
         this.lcor = lcor;
     }
 }
-exports.corr = corr;
-class corr2 {
+export class corr2 {
     constructor(l, ml, ms, f, d) {
         this.l = l;
         this.ml = ml;
@@ -20,4 +16,3 @@ class corr2 {
         this.d = d;
     }
 }
-exports.corr2 = corr2;

@@ -1,11 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.MhahPanchangImpl = void 0;
-const mhahMoonOutragConst_1 = require("./mhahMoonOutragConst");
-class MhahPanchangImpl {
+import { MhahMoonOutragConst } from './mhahMoonOutragConst';
+export class MhahPanchangImpl {
     constructor(mhahConstant) {
         this.mhahConstant = mhahConstant;
-        this.mhahMoonOutragConst = new mhahMoonOutragConst_1.MhahMoonOutragConst();
+        this.mhahMoonOutragConst = new MhahMoonOutragConst();
         this.d2r = Math.PI / 180;
         this.r2d = 180 / Math.PI;
         this.range = [1, 31, 0, 0, -3000, 4000, 0, 23, 0, 59, -12, 12, 0, 59];
@@ -641,4 +638,3 @@ class MhahPanchangImpl {
         return this.fix360(Lmoon - Lsun);
     }
 }
-exports.MhahPanchangImpl = MhahPanchangImpl;

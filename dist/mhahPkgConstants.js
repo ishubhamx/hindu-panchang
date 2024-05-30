@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.MhahPkgConstants = void 0;
-class MhahPkgConstants {
+export class MhahPkgConstants {
     constructor() {
         this.GanaMatched = [
             [6, 6, 0],
@@ -10,4 +7,3 @@ class MhahPkgConstants {
         ];
     }
 }
-exports.MhahPkgConstants = MhahPkgConstants;
