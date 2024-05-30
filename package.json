@@ -1,0 +1,25 @@
+{
+  "name": "hindu-panchang",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hindu",
+    "calender",
+    "vedic"
+  ],
+  "devDependencies": {
+    "typescript": "5.4.5",
+    "@types/node":"20.12.13"
+  },
+  "files": ["dist", "LICENSE", "README.md", "package.json"],
+  "author": "ishubhamx",
+  "license": "ISC",
+  "description": "यह NPM पुस्तकालय तिथि (चंद्र चरण), नक्षत्र, करण, योग, राशि (राशि चक्र चिह्न) और अयनांश की गणना करता है। यह मास (हिंदू माह) और ऋतु (मौसम) की भविष्यवाणी भी कर सकता है। This NPM library calculates Tithi (Moon phase), Nakshatra, Karna, Yoga, Raasi (Zodiac Sign), and Ayanamsa. It can also predict Masa (Hindu month) and Ritu (season)."
+}
